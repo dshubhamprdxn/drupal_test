@@ -1,0 +1,206 @@
+	////////////////////////////////////////////////////////////////////////////////
+//
+//  Latest Updates and Popular Page : Filter page
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+.block-system {
+	// font-family: 'Milo';
+	font-family: 'EconSansOs';
+
+	.view-filters {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.pagination {
+	  margin: 21px 0 35px;
+		li {
+			> a,
+			> span {
+				@include responsive(0,390px) { font-size: 10px; }
+		  }
+	  }
+	  .pager-ellipsis { display: none; }
+	}
+
+	.views-exposed-form {
+
+		.views-exposed-widget {
+			@include responsive(0,570px) { width: 50%; }
+			.form-submit { margin-top: 1.7em; }
+		}
+
+		.views-widget-filter-field_primary_industry_tid { @include responsive(0,570px) { padding-right: 10px; } }
+
+		.views-widget-filter-type_1 { @include responsive(0,570px) { padding-right: 0; } }
+
+		.views-submit-button {
+			@include responsive(0,570px) {
+				padding-right: 0;
+				button.form-submit {
+					margin-top: 10px;
+					padding-top: 6px;
+				}
+			}
+		}
+		.views-reset-button { display: none; }
+	}
+}
+.view-content {
+	display: block;
+	padding-top: 20px;
+
+	.views-view-grid,
+	tbody,
+	tr {
+		width: 100%;
+		height: initial;
+		display: inline-block;
+	}
+
+	tr {
+		td {
+			box-sizing: border-box;
+			width: 32.3%;
+			padding: 5px;
+			margin: 0 1.5% 20px 0;
+			float: left;
+			overflow: hidden;
+			position: relative;
+			font-family: 'EconSansOs';
+			vertical-align: top;
+			transition: transform .3s linear;
+
+			@include responsive(0,1024px) { padding: 0; }
+
+			&:hover {
+				transform: scale(1.04);
+				box-shadow: 0px 3px 5px 1px #808080;
+
+				@include responsive(0,1024px) {
+			      transform: none;
+			      box-shadow: none;
+		    	}
+			}
+
+			@include responsive(0,768px) {
+		      width: 100%;
+		      margin-right: 0;
+	    	}
+
+			&:last-of-type { margin-right: 0; }
+
+			a { display: block; }
+
+			.latest-industry {
+				> div {
+						width: 100%;
+						padding: 0;
+						bottom: initial;
+						text-align: right;
+
+						a {
+							color: #fff;
+							font-weight: 700;
+							padding: 6px 10px;
+							&:hover {
+								text-decoration: none;
+							}
+						}
+					}
+				}
+
+			> div:nth-child(2) {
+				> a { background: linear-gradient(to bottom, rgba(153, 153, 153, .8) 58%, rgba(0, 0, 0, .6) 70%, rgba(0, 0, 0, 0.7) 100%); }
+
+				img {
+					width: 100%;
+					opacity: .8;
+				}
+			}
+
+			.latest-hero {
+				width: 100%;
+				padding-right: 10px;
+				position: absolute;
+				bottom: 0;
+
+				@include responsive(0,1024px) { padding-right: 0; }
+
+				a {
+    				min-height: 57px;
+				    padding: 0 10px;
+				    margin-bottom: 5px;
+				    display: flex;
+				    align-items: center;
+				    background: rgba(0,0,0,0.75);
+					color: #fff;
+					font-size: 15px;
+					@include vendor(all .3s linear);
+					-webkit-text-size-adjust: none;
+
+					@include responsive(0,1024px) {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+
+			&:hover{
+				> div:last-of-type a {
+						text-decoration: none;
+						@include responsive(0,1024px) { color: #fff; }
+				}
+			}
+		}
+	}
+}
+
+.main-container {
+	.span_12_of_12 { padding-bottom: 0; }
+}
+
+.page-latest-updates {
+	.newsletter-block {
+		@include responsive(0,1000px) { margin-top: 0; }
+	}
+}
+
+
+.trending {
+	.viewPopular {
+		text-align: right;
+
+		> a {
+			border-bottom: 1px solid;
+			position: relative;
+			bottom: 4px;
+			color: #969696;
+			font-size: 1.2em;
+			text-decoration: none;
+
+			&:hover {
+				color: #c32330;
+			}
+		}
+	}
+}
+
+.main-content {
+	.editors-choice { margin-top: 0; }
+}
+
+.view-editor,
+.view-contributor {
+	.view-content {
+		@include responsive(0,649px) {
+			.views-view-grid,
+			tbody,
+			tr {
+				display: inline-table;
+			}
+		}
+	}
+}

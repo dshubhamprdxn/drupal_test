@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Hero banner styles
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.node-type-feature-infographic {
+
+	.node-background-wrapper {
+		.main-container {
+			width: 100%;
+			max-width: 1400px;
+			padding: 0;
+			margin: 0 auto;
+		}
+	}
+
+	.infographic-share {
+		padding: 0 2%;
+
+		.share-bottom {	float: none; }
+	}
+
+	.content-body {
+		width: 100%;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	header { position: initial; }
+
+	.related-content {
+		padding: 0 2%;
+		margin: 25px 0;
+
+		@media screen and (max-width: 500px) {
+			padding: 0;
+		}
+
+		> h2 { 
+			margin-bottom: 0;
+			
+			@media screen and (max-width: 768px) {
+				margin-bottom: 10px;
+			}			
+		}
+
+		.view-content { 
+			padding-top: 0;
+
+			> div { transition: transform .4s linear; } 
+		}
+	}
+
+	.node-type-1-content { 
+		border-left: 0;
+		padding-bottom: 0; 
+	}
+
+	.view-content > div:hover {
+		transform: scale(1.05);
+
+		@media screen and (max-width: 1024px) {
+			transform: scale(1);			
+		}
+	}
+}

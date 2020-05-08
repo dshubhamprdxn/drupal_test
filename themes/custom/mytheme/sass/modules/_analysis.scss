@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Analysis
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.page-analysis {
+  .node-background-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .node-type-2-middle {
+    padding: 30px 30px 0;
+    background-color: $white;
+    min-height: 500px;
+    @include bp(mobile) {
+      padding: 0;
+    }
+    .node-content {
+      > div:not(.sponsor-item) {
+        background-color: $concrete;
+        margin-bottom: 30px;
+      }
+      .sponsor-item {
+        margin-bottom: 50px;
+        .field-name-field-hero-image:before {
+          box-shadow: none;
+        }
+        .middle-content {
+          padding: 30px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.download-form-message {
+  float: left;
+  padding-top: 20px;
+}
+
+.field-name-field-infographic-iframe {
+  .field-label { display: none; }
+}
+
+.field-name-field-summary-iframe {
+  .field-label { display: none; }
+}

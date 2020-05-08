@@ -1,0 +1,143 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Our Contributors and Editors Page 
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.view-contributor,
+.view-editor {
+	@include responsive(850px,1024px) { 
+		box-sizing: border-box;
+		padding: 0 6%;
+	}
+	.view-content {
+		tr {
+			td {
+				box-sizing: border-box;
+				width: 23.5%;
+				padding:  5px 5px 10px 5px;
+				margin-right: 1.5%;
+				background-color: #f2f2f2;
+				transition: transform .1s linear;
+
+				&:hover {
+					transform: scale(1.03);
+					-webkit-box-shadow: 0 4px 8px 2px #ccc;
+					-moz-box-shadow: 0 4px 8px 2px #ccc;
+					box-shadow: 0 4px 8px 2px #ccc;
+				}
+
+				@include responsive(0,1024px) {
+					width: 48.7%;
+					display: inline-block;
+					float: none;
+					vertical-align: top;
+
+					&:nth-child(2n) { margin-right: 0; }
+
+					.field-name-field-image,
+					.field-name-field-image > a {
+						height: 275px;
+						@include responsive(850px,1024px) { height: 310px; }
+						@include responsive(0,649px) { height: auto; }
+					}
+				}
+
+				@include responsive(0,1024px) {
+					&:hover {
+						transform: none;
+						box-shadow: none;
+					}
+				}
+
+				@include responsive(0,500px) {
+					width: 100%;
+					margin-right: 0;
+				}
+
+				> a,
+				.views-field-field-twitter { 
+					margin: 10px 0 0 5px;
+					display: inline-block; 
+					vertical-align: top;
+				}
+
+				.icon-mail {
+					&:hover .cls-1 { fill: #d74937; }
+
+					@include responsive(0,1024px) {
+						&:hover .cls-1 { fill: #000; }						
+					}
+				}
+
+				.icon-linkedin {
+					&:hover .cls-1 { fill: #0177b5; }
+
+					@include responsive(0,1024px) {
+						&:hover .cls-1 { fill: #000; }						
+					}
+				}
+
+				.icon-twitter {
+					&:hover .cls-1 { fill: #1ca1f2; }
+
+					@include responsive(0,1024px) {
+						&:hover .cls-1 { fill: #000; }						
+					}
+				}
+
+				.views-field-field-first-name,
+				.views-field-field-last-name { 
+					display: inline-block; 
+				}
+
+				.views-field-field-first-name { padding-left: 5px;  }
+
+				.user-profile {
+					font-size: 20px;
+
+					&:hover {
+						color: #e3120a;
+						text-decoration: none;
+					}
+				}
+
+				.field-name-field-image { padding-bottom: 10px; }
+			}
+
+			img { 
+				width: 100%;
+
+				@include responsive(0,1024px) { height: 100%; } 
+			}	
+
+			.views-field-title {
+				padding: 10px 0;
+
+				a { font-size: 20px; }
+			}
+
+			.views-field-title,
+			.field-name-field-job-title,
+			.field-name-field-company { 
+				padding-left: 5px;
+				padding-right: 5px; 
+			}
+		}
+	}
+
+	.pagination {
+		margin: 21px 0;
+		li {
+			> a,
+			> span { 
+				@include responsive(0,519px) { 
+					padding: 2px 8px;
+					font-size: 12px; 
+				}
+				@include responsive(0,372px) { font-size: 10px; }
+		  }
+	  }
+	  .pager-ellipsis { display: none; }
+	}
+}

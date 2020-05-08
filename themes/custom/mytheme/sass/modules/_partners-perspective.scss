@@ -1,0 +1,252 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Partners' Perspective
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// .partners-perspective {
+//   background-color: #e0e0e0;
+//   padding: 35px 45px 44px;
+
+//   @media screen and (max-width: 500px) {
+//     padding: 20px 20px 0;
+//   }
+
+//   .hero-gradient { 
+//     margin: 5px;
+
+//     @include responsive(0,1024px) { margin: 0; }
+//   }
+
+// 	h1 {
+//     @include font-size(24);
+//     margin: 0 0 25px;
+//     color: #aeaeae;
+//     text-align: center;
+
+//     @media screen and (max-width: 500px) {
+//       margin-bottom: 20px;
+//     }
+//   }
+
+//   .analysis-0 {
+//     margin-left: 0;
+//   }
+
+//   .field-type-image {
+//     display: block;
+//     position: relative;
+
+//     &:before {
+//       content:'';
+//       display: block;
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       -webkit-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.3);
+//       -moz-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.3);
+//       box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.3);
+//     }
+
+//     img {
+//       width: 100%;
+//     }
+//   }
+
+//   > div {
+//     box-sizing: border-box;
+//     padding: 5px;
+//     position: relative;
+//     overflow: hidden;
+//     background-color: $white;
+//     transition: all .4s linear; 
+
+//     @include responsive(0,1024px) {
+//       padding: 0;
+//     }
+
+//     &:last-child {
+//       margin-right: 0;
+//     }
+
+//     @include bp(mobile) {
+//       margin-right: 0;
+//       margin-bottom: 30px;
+//     }
+
+//     &:hover {
+//       transform: scale(1.03);
+//       box-shadow: 0px 3px 5px 1px #808080;
+
+//       @include responsive(0,1024px) {
+//         transform: none;
+//         box-shadow: none;
+//       }
+//     }
+
+//     .partner,
+//     .title {
+//       z-index: 1000;
+//       margin-left: 20px;
+//       margin-right: 20px;
+//     }
+
+//     .partner {
+//       font-weight: bold;
+//       @include font-size(12);
+//     }
+
+//     .title {
+//       font-weight: bold;
+//       @include font-size(14);
+//     }
+
+//     a {
+//       color: white;
+//       text-shadow: 2px 3px 24px #000;
+
+//       @include responsive(0,1024px) {
+//         text-shadow: none;
+//       }
+
+//       &:hover {
+//         text-shadow: none;
+//         text-decoration: none;
+//         transition: color 0.2s;
+//       }
+//     }
+
+//   }
+
+//   .partner-title-wrapper {
+//     position: absolute;
+//     bottom: 20px;
+//     z-index: 8005;
+//   }
+// }
+
+.partners-perspective {
+  background: #ededed;
+  padding: 35px 0 45px;
+  @media screen and (max-width: 1680px) { 
+    padding: 32px 0 84px;
+  }
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 75%;
+    @media screen and (max-width: 1680px) { width: 80%; }
+    @media screen and (max-width: 1440px) { width: 85%; }
+    @media screen and (max-width: 1024px) { width: 92.2%; }
+    @media screen and (max-width: 768px) { width: 95%; margin: 0 0 0 auto; }
+  }
+  .partners-perspective-title {
+    padding: 13px 0;
+    margin: 0 0 32px 0;
+    border-top: 1px solid $darkbordergrey;
+    border-bottom: 1px solid $darkbordergrey;
+    color: #141414;
+    font-weight: bold;
+    font-family: "EconSansOs";
+    font-size: 21px;
+    line-height: 30px;
+    @media screen and (max-width: 768px) { 
+      font: bold 36px/42px EconSansOs;
+      padding: 26px 0 25px;
+      border-top: 2px solid #e0e0e0;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    @media screen and (max-width: 480px) {
+      font: bold 24px/28px EconSansOS;
+    }
+  }
+
+  .partners-perspective-content {
+    margin: 0;
+    // display: flex;
+    @include flexbox;
+    @include justify-content(space-between);
+    // justify-content: space-between;
+    @media screen and (max-width: 768px) { 
+      display: block;
+      width: 100%;
+    }
+    
+    .partners-perspective-item {
+      width: 17.36%;
+      // flex-basis: 17.36%;
+      @include flex-basis(17.36%);
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        margin: 0 1.05% 0 0;
+      }
+      
+      .image {
+        img {
+          width: 100%;
+          object-fit: cover;
+          @media screen and (max-width: 768px) {
+            height: 300px;
+          }
+        }
+      }
+
+      .title {
+        margin: 18px 0 13px 0;
+        color: $tundora;
+        font-family: "Milo";
+        font-size: 16px;
+        line-height: 20px;
+        @media screen and (max-width: 768px) { 
+          font: normal 28px/32px Milo;
+          margin: 28px 0 29px;
+        }
+      }
+
+      .partner {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 20px;
+
+        @media screen and (max-width: 768px) {
+          margin-top: 32px;
+        }
+        .partner-logo {
+          width: 50%;
+          @media screen and (max-width: 768px) { 
+            width: 39.5%;
+          }
+        }
+      }
+
+      .read-more {
+        color: $black;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: "EconSansOs";
+        letter-spacing: 0px;
+        font-weight: bold;
+        display: block;
+        @media screen and (max-width: 768px) { 
+          padding: 3px 0;
+          font: bold 28px/32px EconSansOs;
+        }
+        &:after {
+          content: "";
+          width: 15px;
+          height: 11px;
+          display: inline-block;
+          margin: 5px 0 0 12px;
+          background: url(../images/icons/svg/Group.svg) no-repeat;
+          background-size: contain;
+          transition: 300ms transform ease-in-out;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }   
+    }
+  }
+}

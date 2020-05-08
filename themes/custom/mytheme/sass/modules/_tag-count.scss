@@ -1,0 +1,136 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Tag Count Page
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.view-tag-count,
+.page-all-topics {
+	.view-content {
+		padding-bottom: 20px;
+		text-align: center;
+
+		ul { padding-left: 0; }
+
+		li,
+		td {
+			width: 46%;
+			padding: 10px 20px;
+			margin-bottom: 10px;
+			display: inline-block;
+			background: #f0f0f0;
+			font-size: 20px;
+			text-align: left;
+
+			&:nth-child(2n) { 
+				margin-left: 2%; 
+
+				@media screen and (max-width: 440px) { margin-left: 0; }
+			}
+
+			@media screen and (max-width: 710px) { font-size: 15px; }
+
+			@media screen and (max-width: 600px) { font-size: 12px; }
+
+			@media screen and (max-width: 440px) { width: 100%; }
+
+
+			a {
+				cursor: default;
+				pointer-events: none;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+.page-all-topics {
+	.view-content {
+		padding-top: 0;
+		td {
+			&:hover {
+				a {
+					text-decoration: none;
+
+					@media screen and (max-width: 1024px) {
+						transform:none;
+						color: #e3120a !important;
+					} 
+				}
+			}
+
+			a {
+				cursor: pointer;
+				pointer-events: auto;
+				text-transform: none;
+			}
+		}
+	}
+
+	.view-all-topics {
+		.view-content {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			> div {
+				box-sizing: border-box;
+				padding: 10px 14px;
+				flex-basis: 33%;
+				text-align: left;
+				text-transform: capitalize;
+
+				@media screen and (max-width: 768px) {
+					flex-basis: 50%;
+				}
+
+				@media screen and (max-width: 480px) {
+					flex-basis: 100%;
+				}
+			}
+
+			a { 
+				color: #757e85; 
+				font-family: 'EconSansRg';
+				text-decoration: none;
+
+				&:hover {
+					color: #e3120a;
+
+					@media screen and (max-width: 768px) {
+						color: initial;
+					}
+				}
+			}
+		}
+	}
+
+	.view-display-id-page {
+		.view-content {
+			a { color: #000; }
+		}
+	}
+
+	.pane-all-topics {
+		padding-top: 1px;
+
+		&:first-of-type { background: #f1f1f1; }
+
+		h2 { 
+			padding-left: 12px;
+			font-family: 'EconSansRg'; 
+		}
+	}
+
+	.all-topics-heading {
+		font-size: 120px;
+
+		@media screen and (max-width: 768px) {
+			font-size: 80px;
+		}
+
+		@media screen and (max-width: 480px) {
+			font-size: 50px;
+		}
+	}
+}

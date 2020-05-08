@@ -1,0 +1,206 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Industry Hero slider
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.view-slick-industry-slider {
+	margin-bottom: 18px;
+
+	&:hover {
+		.slick__arrow { 
+			opacity: 0.8;
+			-webkit-transition: opacity .35s ease-in-out;
+	        -moz-transition: opacity .35s ease-in-out;
+	        -ms-transition: opacity .35s ease-in-out;
+	        -o-transition: opacity .35s ease-in-out;
+	        transition: opacity .35s ease-in-out; 
+		}
+	}
+	.well {
+		padding-left: 0;
+		padding-right: 0;
+		border: none;
+		border-radius: 0;    
+		margin-bottom: 0;
+		background-color: initial;
+		box-shadow: none;
+	}
+
+	.block-title {
+		padding: 11px;
+		margin: 0;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	.slide__content { 
+		padding-left: 0;
+		list-style-type: none; 
+	}
+
+	.view-content { padding-top: 0; }
+
+	.slick-slider { margin-bottom: 0; }
+
+	.slick__arrow {
+		opacity: 0;
+		.slick-prev { 
+			left: -20px;
+
+			&:before {
+				position: relative;
+			    bottom: 1px;
+			    left: 12px;
+			} 
+		}
+
+		.slick-next { 
+			right: -18px; 
+
+			&:before {
+				position: relative;
+				bottom: 1px;
+				left: 14px;
+			}
+		}
+
+		@include responsive(0,1023px) { display: none; }
+
+		> button {
+			width: 39px;
+			height: 40px;
+			background: #7c7c7c;
+			
+			&:before {
+				font-family:'FontAwesome';
+				font-size: 35px;
+				color: #969696;
+			}
+
+			&:hover:before { color: $white; }
+		}
+	}
+
+	.slick-dots { 
+		bottom: 15px;
+
+		@include responsive(0,450px) {
+			bottom: 1px;
+		} 
+
+		@include responsive(0,370px) {
+			bottom: -2px;
+		} 
+	}
+
+	.slide__constrained {
+		top: initial;
+		bottom: 9%;
+
+		@include responsive(0,1023px) {
+			width: 90%;
+			position: absolute;
+			top: initial;
+			bottom: 2%;
+			left: 6%;
+		}
+
+		@include responsive(0,760px) {
+			bottom: -19%;
+		} 
+
+		@include responsive(0,580px) {
+			bottom: -38%;
+		}
+
+		@include responsive(0,450px) {
+			bottom: -60%;
+		}
+
+		@include responsive(0,370px) {
+			bottom: -72%;
+		}
+	} 
+
+	.slide__description {
+		.field-name-field-primary-industry { display: none; }
+
+		> div {
+			@include responsive(0,580px) {
+				padding: 3px 5px;
+			}				
+
+			a { 
+				font-size: 12px;
+
+				@include responsive(0,760px) {
+					font-size: 9px;
+				} 
+
+				@include responsive(0,580px) {
+					font-size: 7px;
+				}
+			}
+		}
+
+		> a {
+			padding-top: 10px;
+			display: block;
+			color: #fff;
+			font-size: 46px;
+			font-weight: 700;
+			text-shadow: 2px 3px 24px #000;
+			text-decoration: none;
+			outline: 0;
+
+			&:hover {
+				color: #c32330;
+				text-shadow: none;
+
+				@include responsive(0,1024px) {
+					color: #fff;
+					text-shadow: 2px 3px 24px #000;
+				}
+			}
+
+			@include responsive(0,1100px) {
+				font-size: 38px;
+			}
+
+			@include responsive(0,760px) {
+				font-size: 22px;
+			} 
+
+			@include responsive(0,580px) {
+				padding-top: 5px;
+				font-size: 15px;
+			}
+
+			@include responsive(0,440px) {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.main-container {
+	.span_12_of_12 { 
+		margin-top: 0; 
+		margin-left: 0;
+	}
+}
+
+.industry-page {
+	margin-top: 5px;
+
+	.industry-centric-term-wrapper { 
+		display: block;
+		z-index: 1;
+		font-family: 'EconSansOs';
+		font-size: 16px;
+    	font-weight: 700; 
+	}
+}
+

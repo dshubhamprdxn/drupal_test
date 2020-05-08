@@ -1,0 +1,25 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Modals (bootstrap style overrides)
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.iframe-modal {
+
+  @media screen and (max-width: 1024px) {
+    position: absolute;
+  }
+
+  .modal-body {
+    padding: 0;
+
+    @media screen and (max-width: 650px) {
+      overflow: scroll;
+    }
+  }
+
+  iframe {
+    width: 650px;
+    height: 605px;
+  }
+}

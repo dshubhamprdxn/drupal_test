@@ -1,0 +1,299 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  #Layout
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.node-type-2 {
+  h1 {
+    color: $white;
+    margin: 70px 0 65px 0;
+    padding-left: 30px;
+  }
+}
+
+.node-type-2-wrapper {
+  background-color: $white;
+  padding: 30px;
+
+  @media screen and (max-width: 768px) {
+    @include flexbox;
+    @include flex-direction(column);
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 15px;
+  }
+
+  h3 {
+    color: $mineshaft;
+    @include font-size(22);
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  .field-name-field-job-title {
+    margin-top: 10px;
+    color: $manatee;
+  }
+
+  .field-name-field-biography {
+    color: $tundora;
+    line-height: 1.6em;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.node-type-2-sidebar-left {
+  background-color: $concrete;
+  margin-top: 0;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+    @include order(1);
+  }
+
+  .field-type-image {
+    padding: 5px 5px 0;
+
+    img {
+      width: 100%;
+    }
+
+    a,
+    a:hover {
+      color: transparent;
+    }
+  }
+
+  .field-type-text,
+  .field-type-text-long {
+    @include font-size(14);
+    padding: 0 10px;
+  }
+
+  .contact-info {
+    border-top: 1px solid $alto;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    height: 47px;
+
+    > span {
+      position: absolute;
+    }
+
+    div {
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    svg {
+      path {
+        fill: $manatee;
+      }
+    }
+  }
+
+  .contact-title {
+    top: 13px;
+    left: 10px;
+  }
+
+  .icons {
+    top: 12px;
+    right: 10px;
+  }
+}
+
+.node-type-2-middle {
+  background-color: $white;
+  border-left: 1px solid #d9d9d9;
+  margin-top: 0;
+
+  @media screen and (max-width: 768px) {
+    @include order(3);
+  }
+
+  .editor-recent-contributions {
+    > [class*="editor-"] {
+      background-color: $concrete;
+      margin-bottom: 20px;
+    }
+    .editor-blog,
+    .editor-article {
+      .field-name-field-primary-industry {
+        margin-top: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .field-name-field-primary-industry {
+    -moz-box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: 20px;
+  }
+
+  .field-name-field-hero-image {
+    position: relative;
+
+    &:before {
+      content:'';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.3);
+      -moz-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.3);
+      box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.3);
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    color: $red;
+    font-family: 'Milo';
+    @include font-size(36);
+    margin: 0 0 20px;
+  }
+
+  .inline-wrapper {
+    margin-top: 10px;
+    > div {
+      display: inline-block;
+    }
+
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+    [class*="icon-"] {
+      margin-right: 5px;
+    }
+    .icon-calendar svg {
+      width: 12px;
+      height: 12px;
+    }
+    .icon-location svg {
+      width: 9px;
+      height: 12px;
+    }
+  }
+
+  .field-name-field-publish-date {
+    @include font-size(16);
+    color: $gray;
+    margin: 20px 20px 0 0;
+  }
+
+  .field-name-field-catch-copy {
+    color: $tundora;
+    font-family: 'Milo';
+    @include font-size(16);
+    margin-top: 20px;
+  }
+
+  .tags {
+    margin-top: 20px;
+  }
+
+  .middle-content {
+    padding: 30px;
+
+    .icon-location {
+      margin-left: 20px;
+    }
+  }
+
+  .social {
+    border-top: 1px solid $alto;
+    // padding: 13px; // temporary
+    text-align: right;
+
+    .node-type-1-sharing {
+      border: none;
+      display: none; // temporary
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .icon-share {
+    cursor: pointer;
+    margin-left: 5px;
+
+    path {
+      fill: $red;
+    }
+  }
+
+  .load-more-contributions {
+    text-align: center;
+  }
+
+  .btn {
+    &.use-ajax {
+      padding-top: 4px;
+    }
+  }
+
+  .icon-share-raster {
+    background: url(../images/icons/png/share-red-raster.png) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 18px;
+  }
+}
+
+// exclude from editor profile
+.node-type-editor .node-type-2-middle {
+  border-left: none;
+}
+
+.node-type-2-sidebar-right {
+  @media screen and (max-width: 768px) {
+    order: 2;
+  }
+  &.col {
+    margin-top: 0;
+  }
+
+  .editor-tags {
+    h4 {
+      margin-top: 0;
+    }
+  }
+
+  .editor-primary {
+    margin-bottom: 20px;
+  }
+
+  .field-name-field-primary-industry {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 5px;
+  }
+}
+
+.sponsor-item {
+  display: inline-block;
+  margin: 20px 0 20px 20px;
+
+  .field-name-field-hero-image {
+    &:before {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+}
