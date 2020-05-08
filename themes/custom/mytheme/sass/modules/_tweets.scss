@@ -1,0 +1,191 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Twitter Feed
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// .tweet-slide-control-wrapper {
+//   background-color: $viking;
+//   color: $white;
+//   border-top: 3px solid $bostonblue;
+//   margin-top: 30px;
+//   margin-bottom: 30px;
+//   padding: 35px 25px;
+
+//   a {
+//     color: $white;
+//   }
+//   .slick-slider {
+//     margin: 0;
+//   }
+//   .tweet-slider-wrapper {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100%;
+//     @include bp(mobile) {
+//       display: block;
+//     }
+//     .left,
+//     .middle {
+//       float: left;
+//       display: inline-block;
+//     }
+//     .right {
+//       float: right;
+//       display: inline-block;
+//       text-align: right;
+//       a {
+//         display: inline-block;
+//         background-color: $jellybean;
+//         text-align: center;
+//         padding: 6px 32px;
+//         margin-right: 18px;
+//         @include font-size(16);
+//         @include bp(mobile) {
+//           margin-right: 0;
+//         }
+//         &:hover {
+//           text-decoration: none;
+//           background-color: rgba($jellybean, .8);
+//         }
+//       }
+//     }
+//     .left,
+//     .right {
+//       width: 25%;
+//     }
+//     .middle {
+//       width: 50%;
+//       text-align: center;
+//     }
+//     .left,
+//     .right,
+//     .middle {
+//       @include bp(mobile) {
+//         width: 100%;
+//         text-align: center;
+//         float: none;
+//       }
+//     }
+//   }
+//   .tweet-author {
+//     text-transform: uppercase;
+//     font-weight: bold;
+//     @include font-size(11);
+//     @include bp(mobile) {
+//       display: none;
+//     }
+//   }
+//   .tweet-username {
+//     @include bp(mobile) {
+//       display: inline-block;
+//       a {
+//         display: inline-block;
+//         float: left;
+//       }
+//     }
+//   }
+//   .tweet-message {
+//     font-weight: bold;
+//     @include font-size(14);
+//     @include bp(mobile) {
+//       padding: 15px 0 0;
+//     }
+//     &:before {
+//       content: open-quote;
+//     }
+//     &:after {
+//       content: close-quote;
+//     }
+//   }
+//   .tweet-time {
+//     font-weight: bold;
+//     color: $jellybean;
+//     margin-top: 15px;
+//     @include font-size(11);
+//     @include bp(mobile) {
+//       margin-bottom: 20px;
+//     }
+//   }
+//   .icon-tweet {
+//     float: left;
+//     margin: 5px 10px 0 0;
+//     path {
+//       fill: $white;
+//     }
+//     @include bp(mobile) {
+//       float: none;
+//       display: inline-block;
+//       margin: 0 6px 0 0;
+//     }
+//   }
+// }
+
+.tweet,
+.view-tweets,
+.tweets-mobile {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  .view-content {
+    padding: 0;
+    margin: 0;
+    .item-list ul {
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+
+  .tweet-item,
+  .views-row {
+    margin-bottom: 25px;
+    &:last-child { margin-bottom: 0; }
+    .tweet-title {
+      @include flexbox;
+      .tweet-image {
+        margin-right: 15px;
+        img {
+          -webkit-border-radius: 50em;
+          -moz-border-radius: 50em;
+          border-radius: 50em; 
+        }
+      }
+      .tweet-head {
+        margin-top: 5px;
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(space-between);
+      }
+    }
+  }
+
+  .tweet-message {
+    padding-top: 12px;
+    color: #000;
+    font-size: 14px;
+    a {
+      color: blue;
+    }
+  }
+
+  .tweet-author { color: #000; }
+  .tweet-username a {color: grey;}
+
+  .follow-us {
+    display: inline-block;
+    padding: 6px 25px;
+    background: #4595da;
+    border-radius: 11px;
+    a {
+      color: white;
+    }
+  }
+}
+
+.tweets-mobile {
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+  
+}

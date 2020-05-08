@@ -1,0 +1,259 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Media 3-up (3 media objects in a row)
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+.span_12_of_12 {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+  .front {
+    .media-3-up {
+      h2 {
+        display: inline-block;
+      }
+      .ajax-processed {
+        position: static;
+        text-align: center;
+        display: block;
+        transform: inherit;
+      }
+    }
+  }
+
+
+.media-3-up {
+  margin-top: 20px;
+
+  h2 {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .feed-container { font-family: 'EconSansOs'; }
+
+  a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    color: transparent; // fixes bug in IE10
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.btn {
+      color: $red;
+      display: inline-block;
+      vertical-align: top;
+      background: transparent;
+      border: none;
+      color: $dustygrey;
+      font-size: 1.2em;
+      line-height: 1.1;
+      height: auto;
+      padding: 0;
+      /*margin: 0 0 30px 10px;*/
+      float: right;
+    }
+
+    &.case_study-load-more-button {
+      margin-bottom: 62px;
+    }
+
+    &:hover {
+      color: $red;
+    }
+
+    &.ajax-processed {
+      color: $white;
+      height: auto;
+      line-height: 1em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 115px;
+      display: block;
+      margin: 0 auto 20px;
+      background: $btnOrange;
+      line-height: 1em;
+      font-weight: normal;
+      font-size: 15px;
+      float: none;
+    }
+  }
+
+  .hero-gradient {
+    top: 26px;
+  }
+
+  .field-name-field-hero-image {
+    position: relative;
+    overflow: hidden;
+
+      &:before {
+        content:'';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /*-webkit-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.3);
+        -moz-box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.3);
+        box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.3);*/ /*Temporary removed*/
+      }
+  }
+
+  h2 {
+    color: $dustygrey;
+    font-weight: bold;
+    margin-top: 0;
+    @include font-size(18);
+  }
+
+  .col {
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+      // maintain normal margins
+      margin-bottom: 20px;
+    }
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+  }
+
+  h3 {
+    width: 100%;
+    min-height: 57px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    color: $white;
+    margin: 0;
+    line-height: 1.4em;
+    position: absolute;
+    bottom: 0;
+/*    left: 20px;
+    right: 20px;*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    transition: color 0.2s;
+    z-index: 8005;
+    @include font-size(14);
+  }
+
+  img {
+    width: 100%;
+    transition: all .6s linear;
+  }
+
+  .field-name-field-primary-industry {
+    color: $white;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: right;
+    box-shadow: none;
+
+    @media screen and (max-width: 840px) and (min-width: 769px) {
+      font-size: 0.567em
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .span_4_of_12 {
+      margin-top: 1%;
+      margin-bottom: 20px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%; // break into full width
+    }
+  }
+
+  &.featured {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    .title-wrapper {
+      position: absolute;
+      left: 90px;
+      right: 20px;
+      bottom: 20px;
+      z-index: 8005;
+    }
+
+    .featured-type {
+      color: $white;
+      @include font-size(12);
+      font-weight: bold;
+    }
+
+    h3 {
+      @include font-size(18);
+      font-weight: bold;
+      position: static;
+    }
+
+    .watch-now,
+    .avatar {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      z-index: 8005;
+    }
+
+    .avatar {
+      display: none;/*TEMPORARY ADDED*/
+      border: 1px solid $white;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    .css-icon-play {
+      background-color: #000; /*TEMPORARY ADDED*/
+      &.hero {
+        width: 50px;
+        height: 50px;
+
+        &:after {
+          top: 10px;
+          left: 17px;
+          border-width: 12px 0 12px 18px;
+        }
+      }
+    }
+  }
+  &.video {
+    h3 {
+      left: 60px;
+    }
+    .watch-now {
+      position: absolute;
+      left: 20px;
+      bottom: 23px;
+      z-index: 8005;
+    }
+  }
+    
+}
+
+.front {
+  .media-3-up {
+    .feed-container {
+      h3 { background: rgba(0,0,0,0.75); }
+    }
+  }
+}
+
+.featured-heading {
+  margin-top: 0; 
+  font-weight: bold;
+  @include font-size(18);
+}

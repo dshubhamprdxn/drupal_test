@@ -1,0 +1,129 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Eloqua form override for Analysis
+//
+//  Forgive the !important statements as there are many inline styles
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.eloqua-form {
+  margin: 20px 0;
+  font-family: 'EconSansOs';
+
+  /*div {
+    padding: 0 !important;
+  }*/
+
+  input[type="text"] {
+    margin-bottom: 3px;
+  }
+
+  input[type="submit"] {
+    // background-color: #f69656;
+    // border: 1px solid #f69656;
+    // box-shadow: none;
+    // color: $white;
+    // cursor: pointer;
+    // display: block;
+    // margin: 0 auto 20px;
+    // line-height: 1em;
+    // padding: 10px 20px;
+  }
+
+  input[type="checkbox"] {
+    display: inline-block;
+
+    + label {
+      display: inline;
+    }
+  }
+
+  .form-description {
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .privacy-policy-statement {
+    margin-left: 5px;
+    margin-top: 20px;
+
+    > p { padding-left: 10px; }
+  }
+
+  #formElement4 {
+    .title-sentence {
+      margin-bottom: 15px;
+    }
+  }
+
+  #formElement5,
+  #formElement6 {
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  #formElement12,
+  #formElement8 {
+    p {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .darker-form-area {
+    background-color: #383838;
+    color: #fff;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .btn-disabled {
+    display: inline-block;
+    cursor: not-allowed;
+
+    #submitBTN {
+      opacity: .6;      
+      pointer-events: none;
+    }
+  }
+
+  .submit-button {
+    border: 0;
+    background: #ed3c26;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  @media screen and (max-width: 530px) {
+    .field-group-wrapper {
+      div {
+          width: 46% !important;
+
+          @media screen and (max-width: 380px) {
+            width: 95.5% !important;
+          }
+      }
+    }
+
+    .selection {
+      span { width: 100% !important; }
+    }
+  }
+}
+
+#economist-privacy {
+  clear: both;
+  margin-top: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+}
+
+.rc-anchor { display: none; }

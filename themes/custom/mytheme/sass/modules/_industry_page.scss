@@ -1,0 +1,1383 @@
+.page-financial-services,
+.page-technology-innovation,
+.page-healthcare,
+.page-strategy-leadership,
+.page-talent-education,
+.page-sustainability,
+.page-infrastructure-cities,
+.page-energy,
+.page-marketing,
+.page-economic-development {
+  opacity: 1;
+  .node-background-wrapper {
+    width: 100%;
+    padding: 0;
+    .container {
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      .industry-page { margin: 0; }
+    }
+
+    @media screen and (max-width: 768px) {
+      .slick-track,
+      .slick-list { padding: 0 16.5% 0 0!important; }
+      .slick-prev { visibility: hidden; }
+      .slick-next { 
+        width: 8.225%;
+        height: auto;
+        top: 135px;
+        right: 5.3%;
+      }
+    }
+  }
+
+  .field-name-field-hero-image img {
+    width: 100%;
+    object-fit: cover;
+    @media screen and (max-width: 768px) {
+      height: 300px;
+    }
+  }
+
+  .industry-hero-banner {
+    .view-industry-hero-banner {
+      .view-content { padding: 0; }
+
+      .hero-banner {
+        position: relative;
+        width: 100%;
+      
+        .field-name-field-hero-image {
+          height: 402px;
+          @media screen and (max-width: 768px) { 
+            height: 320px;
+          } 
+          overflow: hidden;
+          img { 
+            width: 100%;
+            object-fit: cover;
+            @media screen and (max-width: 768px) { 
+              height: 320px;
+            } 
+          }
+          &:after {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1) 32%, rgba(0, 0, 0, 0.56) 100%)
+          }
+        }
+      
+        .hero-banner-content {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          transform: translateY(-50%);
+
+          // changes
+          @media screen and (max-width: 768px) {
+            // top: 21%;
+            // transform: translateY(-21%);
+          }
+          
+          .wrapper {
+            max-width: 1440px;
+            width: 75%;
+            margin: 0 auto;
+            margin: 0 auto;
+
+            @media screen and (max-width: 1680px) { width: 80%; }
+            @media screen and (max-width: 1440px) { width: 85%; }
+            @media screen and (max-width: 1024px) { width: 92.2%; }
+            @media screen and (max-width: 768px) { width: 90%; }
+          }
+
+          .body,
+          .summary,
+          .cleanurl,
+          .title { display: none; }
+          
+          .hero-banner-title {
+            width: 60%;
+            margin: 30px 0 0 0;
+            color: $white;
+            font: normal 34px/38px Milo;
+            letter-spacing: 0px;
+
+            // changes
+            @media screen and (max-width: 768px) {
+              width: 82.63%;
+              margin: 28px 0 0 0;
+              font: normal 36px/42px Milo;
+            }
+            
+            @media screen and (max-width: 480px) {
+              width: 100%;
+              margin: 28px 0 0 0;
+              font: normal 30px/34px Milo;
+            }
+
+            a { color: $white; }
+            
+            .views-more-link { 
+              font-size: 16px;
+              line-height: 26px;
+              font-family: "Milo";
+             }
+          }
+      
+          .primary-industry {
+            max-width: 190px;
+            width: 15.80%;
+            padding-top: 10px;
+            margin: 0;
+            display: inline-block;
+            border-top: 2px solid $white;
+            color: $white;
+            font: normal 16px/20px Milo;
+
+            // changes
+            @media screen and (max-width: 768px) {
+              width: 50%;
+              font: normal 24px/28px Milo;
+            }
+
+            @media screen and (max-width: 480px) {
+              width: 100%;
+              font: normal 20px/24px Milo;
+            }
+          }
+      
+          .date-social {
+            margin-top: 50px;
+            text-align: left;
+            // changes
+            @media screen and (max-width: 768px) { margin-top: 72px; }
+
+            .share-wrap { 
+              margin: 15px 0 0 0;
+
+              // changes
+              @media screen and (max-width: 768px) { display: none; }
+            }
+
+            .publish-date {
+              display: block;
+              color: $white;
+              letter-spacing: 0px;
+              font: normal 18px/24px EconSansOs;
+
+              // changes
+              @media screen and (max-width: 768px) { font: normal 28px/21px EconSansOS; }
+              @media screen and (max-width: 480px) { font: normal 24px/17px EconSansOS; }
+            }
+
+            .node-type-1-sharing {
+              text-align: left;
+              margin-top: 15px;
+              padding: 0;
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .industry-section-1 {
+    .wrapper {
+      max-width: 1440px;
+      width: 75%;
+      margin: 0 auto;
+      @include flexbox;
+      @include justify-content(space-between);
+      padding: 35px 0 50px 0;
+
+      @media screen and (max-width: 1680px) { width: 80%; }
+      @media screen and (max-width: 1440px) { width: 85%; }
+      @media screen and (max-width: 1024px) { width: 92.2%; }
+      // changes
+      @media screen and (max-width: 768px) { 
+        width: 95%;
+        margin: 0 0 0 auto;
+        padding: 30px 0 0 0;
+      }
+    }
+
+    .industry-section-1_left {
+      width: 76.04%;
+      // flex-basis: 76.04%;
+      @include flex-basis(76.04%);
+
+      // changes
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        // flex-basis: 76.04%;
+        @include flex-basis(100%);
+      }
+
+      .industry-latest-section,
+      .industry-popular-section {
+        .view-industry-latest-section,
+        .view-industry-popular-section {
+          .view-header {
+            padding: 16px 0;
+            margin-bottom: 35px;
+            color: #141414;
+            font-family: "EconSansOs";
+            font-size: 21px;  
+            font-weight: bold;
+            line-height: 30px;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+
+            // changes
+            @media screen and (max-width: 768px) {
+              width: 95%;
+              padding: 25px 0;
+              margin-bottom: 32px;
+              border-top: 2px solid #e0e0e0;
+              border-bottom: 2px solid #e0e0e0;
+              font: bold 36px/42px EconSansOS;
+            }
+            
+            @media screen and (max-width: 480px) { font: bold 29px/35px EconSansOS; }
+              
+            p { margin: 0; }
+          }
+
+          .slick-slider { margin-bottom : 0; }
+
+          .view-content {
+            padding: 0;
+            @include flexbox;
+            @include justify-content(space-between);
+
+            // changes
+            @media screen and (max-width: 768px) {
+              display: block;
+            }
+
+            .views-row {
+              width: 22.83%;
+              // flex-basis: 22.83%;
+              @include flex-basis(22.83%);
+
+              // changes
+              @media screen and (max-width: 768px) {
+                width: 78.28%;
+                // flex-basis: 78.28%;
+                margin: 0 1.05% 0 0;
+                @include flex-basis(78.28%);
+
+                .field-name-field-hero-image img {
+                  width: 100%;
+                }
+              }
+            }
+
+            .field-name-field-primary-industry {
+              width: 80%;
+              height: 2px;
+              padding: 0;
+              margin-top: 25px;
+              text-indent: -9999px;
+              box-shadow: none;
+              display: block;
+
+              // changes
+              @media screen and (max-width: 768px) {
+                margin-top: 27px;
+              }
+            }
+
+            .primary-industry {
+              margin: 10px 0 0 0;
+              display: block;
+              color: $greyish;
+              font-family: "Milo";
+              font-size: 16px;
+              font-weight: normal;
+              letter-spacing: 0px;
+              line-height: 20px;
+
+              // changes
+              @media screen and (max-width: 768px) { font: normal 24px/28px Milo; }
+              @media screen and (max-width: 480px) { font: normal 20px/24px Milo; }
+
+            }
+
+            .title {
+              margin: 15px 0 0 0;
+              color: $tundora;
+              font-family: "Milo";
+              font-size: 16px;
+              font-weight: normal;
+              letter-spacing: 0px;
+              line-height: 20px;
+              // changes
+              @media screen and (max-width: 768px) {
+                margin: 27px 0 0 0;
+                font: normal 28px/32px Milo;
+              }
+
+              @media screen and (max-width: 480px) { font: normal 22px/28px Milo; }
+            }
+
+            .views-field-view-node a {
+              margin-top: 13px;
+              display: inline-block;
+              color: $black;
+              font-family: "EconSansOs";
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 30px;
+  
+              &:hover {
+                text-decoration: none;
+              }
+              &:after {
+                content: '';
+                width: 15px;
+                height: 11px;
+                display: inline-block;
+                margin: 5px 0 0 12px;
+                background: url(../images/icons/svg/Group.svg) no-repeat;
+                background-size: contain;
+                transition: 300ms transform ease-in-out;
+              }
+
+              // changes
+              @media screen and (max-width: 768px) {
+                margin: 27px 0 88px 0;
+                font: bold 28px/32px EconSansOS;
+
+                &:after {
+                  width: 45px;
+                  height: 20px;
+                  margin: 0 0 1px 22px;
+                  vertical-align: middle;
+                }
+              }
+
+              @media screen and (max-width: 480px) {
+                font: bold 22px/28px EconSansOS;
+            
+                &:after {
+                  width: 34px;
+                  height: 12px;
+                  margin: 0 0 1px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .industry-popular-section {
+        margin: 35px 0 0 0;
+        @media screen and (max-width: 768px) {
+          margin: 0;
+        }
+      }
+
+      .editor-video-section {
+        margin: 35px 0 0 0;
+        @include flexbox;
+        @include justify-content(space-between);
+
+        // changes
+        @media screen and (max-width: 768px) {
+          margin: 0;
+          display: block;
+        }
+
+        .industry-editor-choice-section {
+          width: 48.58%;
+          // flex-basis: 48.58%;
+          @include flex-basis(48.58%);
+          .views-row {
+            width: 47%;
+            // flex-basis: 47%;
+            @include flex-basis(47%);
+            
+            // changes
+            @media screen and (max-width: 768px) {
+              width: 78.28%;
+              // flex-basis: 78.28%;
+              @include flex-basis(78.28%);
+              margin: 0 1.6% 0 0;
+
+              .field-name-field-hero-image img {
+                width: 100%;
+              }
+            }
+          }
+
+          .slick-slider { margin-bottom : 0; }
+
+          // changes
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            // flex-basis: 76.04%;
+            @include flex-basis(100%);
+          }
+        }
+
+        .industry-videos-section {
+          width: 48.49%;
+          // flex-basis: 48.49%;
+          @include flex-basis(48.49%);
+          .views-row {
+            width: 47.08%;
+            // flex-basis: 47.08%;
+            @include flex-basis(47.08%);
+
+            // changes
+            @media screen and (max-width: 768px) {
+              width: 78.28%;
+              // flex-basis: 78.28%;
+              @include flex-basis(78.28%);
+              margin: 0 1.6% 0 0;
+
+              .field-name-field-hero-image img {
+                width: 100%;
+              }
+            }
+          }
+          
+          // changes
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            // flex-basis: 76.04%;
+            @include flex-basis(100%);
+          }
+        }
+
+        .industry-editor-choice-section,
+        .industry-videos-section {
+          .view-industry-editor-choice,
+          .view-industry-video-section {
+            .view-header {
+              padding: 16px 0;
+              margin-bottom: 35px;
+              color: #141414;
+              font-family: "EconSansOs";
+              font-size: 21px;  
+              font-weight: bold;
+              line-height: 30px;
+              border-top: 1px solid #e0e0e0;
+              border-bottom: 1px solid #e0e0e0;
+
+              // changes
+              @media screen and (max-width: 768px) {
+                width: 95%;
+                padding: 25px 0;
+                margin-bottom: 32px;
+                border-top: 2px solid #e0e0e0;
+                border-bottom: 2px solid #e0e0e0;
+                font: bold 36px/42px EconSansOS;
+              }
+
+              @media screen and (max-width: 480px) { font: bold 29px/35px EconSansOS; }
+
+              p { margin: 0; }
+
+            }
+
+            .slick-slider { margin-bottom : 0; }
+  
+            .view-content {
+              padding: 0;
+              @include flexbox;
+              @include justify-content(space-between);
+              // changes
+              @media screen and (max-width: 768px) {
+                display: block;
+              }
+  
+              .title {
+                margin: 25px 0 0 0;
+                color: $tundora;
+                font-family: "Milo";
+                font-size: 16px;
+                font-weight: normal;
+                letter-spacing: 0px;
+                line-height: 20px;
+                // changes
+                @media screen and (max-width: 768px) {
+                  margin: 27px 0 0 0;
+                  font: normal 28px/32px Milo;
+                }
+                
+                @media screen and (max-width: 480px) { font: normal 22px/28px Milo; }
+              }
+  
+              .views-field-view-node a {
+                margin-top: 13px;
+                display: inline-block;
+                color: $black;
+                font-family: "EconSansOs";
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 30px;
+    
+                &:hover {
+                  text-decoration: none;
+                }
+                &:after {
+                  content: '';
+                  width: 15px;
+                  height: 11px;
+                  display: inline-block;
+                  margin: 5px 0 0 12px;
+                  background: url(../images/icons/svg/Group.svg) no-repeat;
+                  background-size: contain;
+                  transition: 300ms transform ease-in-out;
+                }
+              
+                // changes
+                @media screen and (max-width: 768px) {
+                  margin: 27px 0 88px 0;
+                  font: bold 28px/32px EconSansOS;
+  
+                  &:after {
+                    width: 45px;
+                    height: 20px;
+                    margin: 0 0 1px 22px;
+                    vertical-align: middle;
+                  }
+                }
+
+                @media screen and (max-width: 480px) {
+                  font: bold 22px/28px EconSansOS;
+              
+                  &:after {
+                    width: 34px;
+                    height: 12px;
+                    margin: 0 0 1px 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    .industry-section-1_right {
+      width: 20.13%;
+      // flex-basis: 20.13%;
+      @include flex-basis(20.13%);
+      
+      // changes
+      @media screen and (max-width: 768px) { display: none; }
+      
+      .weekly-digest {
+        padding: 32px 20px 44px 25px;
+        margin: 0 0 115px 0;
+        background: red;
+        font-family: 'EconSansOs';
+        text-align: left;
+        h2 {
+          margin: 0 0 5px 0;
+          color: $white;
+          font-size: 21px;
+          line-height: 30px;
+          @media only screen and (max-width: 1200px) { 
+            font-size: 18px;
+          }
+        }
+        p {
+          margin-bottom: 25px;
+          color: $white;
+          font-family: "Milo";
+          font-size: 16px;
+          letter-spacing: 0px;
+          line-height: 21px;
+        }
+        span {
+          min-width: 156px;
+          width: 54.73%;
+          padding: 7px 13px 8px 13px;
+          display: block;
+          background-color: $purple;
+          color: $white;
+          cursor: pointer;
+          font-size: 16px;
+          font-family: "EconSansOs";
+          letter-spacing: 0px;
+          line-height: 20px;
+          &:after {
+            content: '';
+            background: url(../images/icons/png/arrow_white.png) no-repeat;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin: 0 0 0 7px;
+            background-size: contain;
+            transition: 300ms transform ease-in-out;
+            vertical-align: bottom;
+          }
+        }
+      }
+    }
+
+  }
+
+  .industry-section-2 {
+    background: $vividred;
+
+    .wrapper { 
+      width: 75%;
+      margin: 0 auto;
+
+      @media screen and (max-width: 768px) { width: 80%; }
+    }
+  
+    .weekly-digest {
+      max-width: 1440px;
+      padding: 65px 0 67px 4.86%;
+      padding: 65px 0 67px 0;
+      font-family: 'EconSansOs';
+      text-align: left;
+
+      // changes
+      @media screen and (max-width: 768px) { padding: 60px 0 52px 0; }
+      @media screen and (max-width: 555px) { padding: 50px 0 42px 0; }
+
+      h2 {
+        max-width: 683px;
+        width: 60%;
+        margin: 0 0 15px 0;
+        color: $white;
+        font-family: "Milo";
+        font-size: 34px;
+        line-height: 41px;
+      
+        // changes
+        @media screen and (max-width: 768px) {
+          // width: 70.50%;
+          width: 80%;
+          margin: 0 0 20px 0;
+          font: normal 36px/42px Milo;
+        }
+
+        @media screen and (max-width: 555px) { font: normal 32px/38px Milo; }
+
+        @media screen and (max-width: 480px) { 
+          width: 100%;
+          font: normal 27px/34px Milo;
+        }
+
+      }
+
+      p {
+        width: 51.73%;
+        margin-bottom: 35px;
+        color: #e9e6e6;
+        font-family: "EconSansOs";
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 21px;
+
+        // changes
+        @media screen and (max-width: 768px) {
+          width: 89.84%;
+          margin-bottom: 49px;
+          font: normal 28px/32px EconSansOS;
+        }
+
+        @media screen and (max-width: 555px) { 
+          margin-bottom: 36px;
+          font: normal 24px/30px EconSansOS; 
+        }
+
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          font: normal 22px/28px EconSansOS; 
+        }
+      }
+      
+      span {
+        min-width: 205px;
+        width: 14.23%;
+        padding: 13px 2.8% 9px 2.8%;
+        display: block;
+        background: #4054b3;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 28px;
+
+        &:after {
+          content: '';
+          background: url(../images/icons/png/arrow_white.png) no-repeat;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          margin: 0 0 0 7px;
+          vertical-align: middle;
+          background-size: contain;
+          transition: 300ms transform ease-in-out;
+        }
+
+        // changes
+        @media screen and (max-width: 768px) {
+          width: 61.13%;
+          padding: 22px 3.8% 22px 11.8%;
+          font: bold 28px/32px EconSansOS;
+
+          &:after {
+            width: 41px;
+            height: 38px;
+            margin: 0 0 0 15px;
+          }
+        }
+
+        @media screen and (max-width: 555px) {
+          padding: 20px 4.8% 20px 9.8%;
+          font: bold 24px/28px EconSansOS;
+
+          &:after {
+            width: 35px;
+            height: 34px;
+            margin: 0px 0 0 10px;
+          }
+        }
+
+        @media screen and (max-width: 480px) {
+          padding: 20px 3.8% 20px 9.8%;
+          font: bold 22px/26px EconSansOS;
+
+          &:after {
+            width: 28px;
+            height: 30px;
+            margin: 0px 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .industry-section-3 {
+    padding: 52px 0 45px 0;
+
+    // changes
+    @media screen and (max-width: 768px) { padding: 0; }
+
+    .wrapper {
+      max-width: 1440px;
+      width: 75%;
+      margin: 0 auto;
+      @include flexbox;
+      @include justify-content(space-between);
+      @media screen and (max-width: 1680px) { width: 80%; }
+      @media screen and (max-width: 1440px) { width: 85%; }
+      @media screen and (max-width: 1024px) { width: 92.2%; }
+
+      // changes
+      @media screen and (max-width: 768px) { 
+        width: 95%;
+        margin: 0 0 0 auto;
+        padding: 30px 0 0 0;
+      }
+    }
+
+    .industry-section-3_left {
+      width: 76.04%;
+      // flex-basis: 76.04%;
+      @include flex-basis(76.04%);
+      @include flexbox;
+      @include justify-content(space-between);
+      @include flex-wrap(wrap);
+
+      // changes
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        // flex-basis: 76.04%;
+        @include flex-basis(100%);
+        display: block;
+      }
+
+      .view-content {
+        @include flexbox;
+        @include justify-content(space-between);
+        @include flex-wrap(wrap);
+      }
+
+      .industry-section-3_left_1,
+      .industry-section-3_left_2,
+      .industry-section-3_left_3,
+      .industry-section-3_left_4 {
+
+        .view-header {
+          padding: 16px 0;
+          margin-bottom: 35px;
+          color: #141414;
+          font-family: "EconSansOs";
+          font-size: 21px;  
+          font-weight: bold;
+          line-height: 30px;
+          border-top: 1px solid #e0e0e0;
+          border-bottom: 1px solid #e0e0e0;
+
+          // changes
+          @media screen and (max-width: 768px) {
+            width: 95%;
+            padding: 25px 0;
+            margin-bottom: 32px;
+            border-top: 2px solid #e0e0e0;
+            border-bottom: 2px solid #e0e0e0;
+            font: bold 36px/42px EconSansOS;
+          }
+          
+          @media screen and (max-width: 480px) { font: bold 29px/35px EconSansOS; }
+
+          p { margin: 0; }
+        }
+
+        .slick-slider { margin-bottom : 0; }
+  
+        .view-content {
+          padding: 0;
+          @include flexbox;
+          @include justify-content(space-between);
+
+          // changes
+          @media screen and (max-width: 768px) {
+            display: block;
+          }
+          .views-row { margin: 0 1.05% 0 0; }
+          .views-row-3,
+          .views-row-4 { 
+            margin: 34px 0 0 0;
+            @media screen and (max-width: 768px) { margin: 0 1.05% 0 0; } 
+          }
+  
+          .field-name-field-primary-industry {
+            width: 80%;
+            height: 2px;
+            padding: 0;
+            margin-top: 25px;
+            text-indent: -9999px;
+            box-shadow: none;
+
+            // changes
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              height: 2px;
+              margin-top: 27px;
+            }
+          }
+  
+          .content-type {
+            max-width: 188px;
+            width: 75%;
+            margin: 35px 0 0 0;
+            padding: 10px 0 0 0;
+            border-top: 1px solid $darkbordergrey;
+            color: $greyish;
+            font-family: "Milo";
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 0px;
+            line-height: 20px;
+
+            // changes
+            @media screen and (max-width: 768px) {
+              margin: 27px 0 0 0;
+              border-top: 2px solid $darkbordergrey;
+              font: normal 24px/28px Milo;
+            }
+
+            @media screen and (max-width: 480px) { font: normal 20px/24px Milo; }
+          }
+  
+          .title {
+            margin: 15px 0 0 0;
+            color: $tundora;
+            font-family: "Milo";
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 0px;
+            line-height: 20px;
+
+            @media screen and (max-width: 768px) {
+              margin: 28px 0 0 0;
+              font: normal 28px/32px Milo;
+            }
+            
+            @media screen and (max-width: 480px) { font: normal 22px/28px Milo; }
+          }
+  
+          .views-field-view-node a {
+            margin-top: 13px;
+            display: inline-block;
+            color: $black;
+            font-family: "EconSansOs";
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 30px;
+  
+            &:hover {
+              text-decoration: none;
+            }
+            &:after {
+              content: '';
+              width: 15px;
+              height: 11px;
+              display: inline-block;
+              margin: 5px 0 0 12px;
+              background: url(../images/icons/svg/Group.svg) no-repeat;
+              background-size: contain;
+              transition: 300ms transform ease-in-out;
+            }
+
+            // changes
+            @media screen and (max-width: 768px) {
+              margin: 30px 0 88px 0;
+              font: bold 28px/32px EconSansOS;
+      
+              &:after {
+                width: 45px;
+                height: 20px;
+                margin: 0 0 1px 22px;
+                vertical-align: middle;
+              }
+            }
+
+            @media screen and (max-width: 480px) {
+              font: bold 22px/28px EconSansOS;
+
+              &:after {
+                width: 34px;
+                height: 12px;
+                margin: 0 0 1px 10px;
+              }
+            }
+          }
+        }
+      }
+
+      .industry-section-3_left_1 { 
+        margin: 0 0 45px 0; 
+        // changes
+        @media screen and (max-width: 768px) {
+         margin: 0;
+        }
+      }
+
+      .industry-section-3_left_1,
+      .industry-section-3_left_3 {
+        width: 48.58%;
+        // flex-basis: 48.58%;
+        @include flex-basis(48.58%);
+
+        // changes
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          // flex-basis: 76.04%;
+          @include flex-basis(100%);
+        }
+
+        .views-row {
+          width: 46.99%;
+          // flex-basis: 46.99%;
+          @include flex-basis(46.99%);
+
+          // changes
+          @media screen and (max-width: 768px) {
+            width: 78.28%;
+            // flex-basis: 78.28%;
+            @include flex-basis(78.28%);
+
+            .field-name-field-hero-image img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .industry-section-3_left_2,
+      .industry-section-3_left_4 {
+        width: 48.49%;
+        // flex-basis: 48.49%;
+        @include flex-basis(48.49%);
+
+        // changes
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          // flex-basis: 76.04%;
+          @include flex-basis(100%);
+        }
+
+        .views-row {
+          width: 48.49%;
+          // flex-basis: 48.49%;
+          @include flex-basis(48.49%);
+
+          // changes
+          @media screen and (max-width: 768px) {
+            width: 78.28%;
+            // flex-basis: 78.28%;
+            @include flex-basis(78.28%);
+
+            .field-name-field-hero-image img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .industry-section-3_right,
+    .industry_mobile_blogs {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      width: 20.13%;
+      // flex-basis: 20.13%;
+      @include flex-basis(20.13%);
+
+      .views-row { margin: 39px 0 0 0; }
+      .views-row-first { margin: 35px 0 0 0 }
+
+      .views-row,
+      .views-row-first { 
+        @media screen and (max-width: 768px) {  margin: 0; }
+      }
+
+      .view-industry-blogs {
+        .view-header {
+          padding: 16px 0;
+          margin-bottom: 35px;
+          color: #141414;
+          font-family: "EconSansOs";
+          font-size: 21px;  
+          font-weight: bold;
+          line-height: 30px;
+          border-top: 1px solid #e0e0e0;
+          border-bottom: 1px solid #e0e0e0;
+          p { margin: 0; }
+        }
+
+        .view-content {
+          padding: 0;
+          .slick-next { top: 67px; }
+          .title {
+            margin: 15px 0 0 0;
+            color: $tundora;
+            font-family: "Milo";
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 0px;
+            line-height: 21px;
+          }
+
+          .views-field-view-node a {
+            margin-top: 13px;
+            display: inline-block;
+            color: $black;
+            font-family: "EconSansOs";
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 30px;
+
+            &:hover {
+              text-decoration: none;
+            }
+            &:after {
+              content: '';
+              width: 15px;
+              height: 11px;
+              display: inline-block;
+              margin: 5px 0 0 12px;
+              background: url(../images/icons/svg/Group.svg) no-repeat;
+              background-size: contain;
+              transition: 300ms transform ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+    .industry_mobile_blogs {
+      display: none;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        // flex-basis: 76.04%;
+        @include flex-basis(100%);
+        display: block;
+      }
+      .view-industry-blogs {
+        .view-header {
+          // changes
+          @media screen and (max-width: 768px) {
+            width: 95%;
+            padding: 25px 0;
+            margin-bottom: 0;
+            border-top: 2px solid #e0e0e0;
+            border-bottom: 2px solid #e0e0e0;
+            font: bold 36px/42px EconSansOS;
+          }
+
+          @media screen and (max-width: 480px) { font: bold 29px/35px EconSansOS; }
+        }
+
+        .slick-slider { margin-bottom : 0; }
+
+        .view-content {
+          // changes
+          @media screen and (max-width: 768px) {
+            display: block;
+          }
+
+          .title {
+            // changes
+            @media screen and (max-width: 768px) {
+              margin: 33px 0 0 0;
+              font: normal 28px/32px Milo;
+            }
+
+            @media screen and (max-width: 480px) { font: normal 22px/28px Milo; }
+          }
+
+          .views-field-view-node a {
+            // changes
+            @media screen and (max-width: 768px) {
+              margin: 27px 0 88px 0;
+              font: bold 28px/32px EconSansOS;
+
+              &:after {
+                width: 45px;
+                height: 20px;
+                margin: 0 0 1px 22px;
+                vertical-align: middle;
+              }
+            }
+
+            @media screen and (max-width: 480px) {
+              font: bold 22px/28px EconSansOS;
+
+              &:after {
+                width: 34px;
+                height: 12px;
+                margin: 0 0 1px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .industry-section-4 {
+    @media screen and (max-width: 768px) {
+      background: #EDEDED 0% 0% no-repeat;
+    }
+
+    .wrapper {
+      max-width: 1440px;
+      width: 75%;
+      margin: 0 auto;
+      @media screen and (max-width: 1680px) { width: 80%; }
+      @media screen and (max-width: 1440px) { width: 85%; }
+      @media screen and (max-width: 1024px) { width: 92.2%; }
+      // changes
+      @media screen and (max-width: 768px) { 
+        width: 95%;
+        margin: 0 0 0 auto;
+        padding: 31px 0 0 0;
+      }
+    }
+
+    .editor-contributor-title {
+      padding: 13px 0;
+      margin: 0;
+      @include flexbox;
+      align-items: center;
+      border-top: 1px solid $darkbordergrey;
+      border-bottom: 1px solid $darkbordergrey;
+      @include justify-content(space-between);
+      // changes
+      @media screen and (max-width: 768px) {
+        width: 95%;
+        padding: 23px 0;
+        border-top: 2px solid #e0e0e0;
+        border-bottom: 2px solid #e0e0e0;
+      }
+      
+      h3 {
+        margin: 0;
+        font-weight: bold;
+        font-family: "EconSansOs";
+        font-size: 21px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #141414;
+        // changes
+        @media screen and (max-width: 768px) {
+          width: 60.39%;
+          font: bold 36px/42px EconSansOS;
+        }
+      }
+      .view-all {
+        margin: 0;
+        color: $black;
+        font-weight: bold;
+        font-family: "EconSansOs";
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0px;
+        // changes
+        @media screen and (max-width: 768px) {
+          padding: 0 36px 0 0;
+          font: bold 28px/32px EconSansOS;
+        }
+
+        a { 
+          color: $black;
+          &:hover { text-decoration: underline; }
+          
+          // changes
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .view-industry-editors-contributors {
+      padding: 35px 0 35px 0;
+      border-bottom: 1px solid $darkbordergrey;
+      .view-content {
+        padding: 0;
+        margin: 0;
+        @include flexbox;
+
+        @media screen and (min-width: 768px) {
+          .slick-slide {
+            margin: 0 10px;
+            outline: none;
+          }
+  
+          .slick-list {
+            margin: 0 -10px;
+            width: calc(100% + 20px);
+          }
+  
+          .slick-prev,
+          .slick-next {
+            top: 20%;
+            z-index: 999;
+          }
+  
+          .slick-next { right: -10px; }
+          .slick-prev { left: -10px; }
+        }
+
+        .views-row {
+          width: 22.85%;
+          // flex-basis: 22.85%;
+          @include flex-basis(22.85%);
+
+          // changes
+          @media screen and (max-width: 768px) {
+            width: 78.28%;
+            // flex-basis: 78.28%;
+            @include flex-basis(78.28%);
+            margin: 0 32px 0 0;
+          }
+
+          .editor-item {
+            .editor-profile {
+              position: relative;
+              margin: 0 0 25px 0;
+              // changes
+              // @media screen and (max-width: 768px) {
+              //   width: 100%;
+              // }
+
+              img { 
+                width: 100%;
+                object-fit: cover;
+                @media screen and (max-width: 768px) { height: 300px; }
+              }
+              .field-name-field-featured {
+                padding: 5px 0;
+                margin: 0;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                display: inline-block;
+                width: 41.66%;
+                color: $white;
+                text-align: center;
+                background: $black;
+                font-size: 14px;
+                line-height: 21px;
+                font-family: "EconSansOs";
+              }
+            }
+
+            .field-name-field-job-title,
+            .job-title,
+            .full-name {
+              color: $tundora;
+              font-size: 16px;
+              line-height: 21px;
+              font-family: "Milo";
+              margin: 0;
+            }
+            .social-media {
+              width: 115px;
+              margin-top: 5px;
+              @include flexbox;
+
+              div { font-size: 1px; }
+              div a { 
+                margin-right: 5px;
+                transition: all .5s ease-in-out;
+                &:hover { transform: rotate(360deg); }
+              }
+              div:last-child a { margin-right: 0; }
+              a div { display: none; }
+              .facebook a { 
+                background: url(../images/icons/png/share/facebook_share.png) no-repeat; 
+                background-size: 100% 100%; 
+              }
+              .twitter a { 
+                background: url(../images/icons/png/share/twitter_share.png) no-repeat; 
+                background-size: 100% 100%;
+              }
+              .email a { 
+                background: url(../images/icons/png/share/email_share.png) no-repeat; 
+                background-size: 100% 100%;
+              }
+              .linkedin a { 
+                background: url(../images/icons/png/share/linkedin_share.png) no-repeat; 
+                background-size: 100% 100%;
+              }
+              
+              a {
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+}

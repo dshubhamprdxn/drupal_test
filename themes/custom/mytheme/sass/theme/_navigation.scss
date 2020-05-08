@@ -1,0 +1,134 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Responsive navigation custom styles
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+.pushy {
+  background: url(../images/backgrounds/nav-bg.png) repeat;
+  top: 131px;
+
+  @media screen and (max-width: 1024px) {
+    top: 94px;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 79px;
+  }
+
+  @media screen and (max-width: 570px) {
+    top: 61px;
+  }  
+
+  @media screen and (max-width: 400px) {
+    top: 54px;
+  } 
+
+  .region-general-menu {
+    .block-title {
+      display: none;
+    }
+
+    a {
+      padding: 7px 0;
+      @include font-size(14);
+
+      &:hover {
+        background-color: transparent;
+        color: $red;
+      }
+    }
+  }
+}
+
+// if header ad is not empty, overright position of the menu
+.ad-header-container.not-empty + .pushy {
+  top: 191px;
+}
+
+.pushy.fixed {
+  position: fixed;
+  top: 131px;
+  bottom: 0;
+
+  @media screen and (max-width: 1024px) {
+    top: 94px;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 79px;
+  }
+
+  @media screen and (max-width: 570px) {
+    top: 61px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+
+  .ad-header-container.not-empty + .pushy {
+    top: 151px;
+
+    &.pushy-open {
+
+      &.fixed {
+          top: 109px;
+      }
+    }
+
+  }
+}
+
+#_evidon_banner {
+ position: fixed !important;
+ top: 0;
+}
+
+@media screen and (max-width: 400px) {
+
+  .ad-header-container.not-empty + .pushy {
+
+    &.pushy-open {
+
+      &.fixed {
+          top: 54px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ad-header-container.not-empty + .pushy {
+    top: 113px;
+  }
+
+  .pushy {
+    &.pushy-left {
+      // missing this was causing the weird bug on iOS
+      top: 56px;
+    }
+
+    &.fixed {
+      top: 56px;
+    }
+  }
+
+  .ad-header-container.not-empty + .pushy {
+    &.pushy-left {
+      top: 115px;
+    }
+    &.fixed {
+      top: 45px;
+    }
+  }
+}
+
+.nav-social-media {
+  height: 190px;
+
+  h4 {
+    @include font-size(14);
+  }
+}

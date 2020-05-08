@@ -1,0 +1,117 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Overlay
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// Overlay style
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 1em;
+  z-index: 10000;
+}
+
+// Overlay close
+
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../images/icons/png/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  cursor: pointer;
+  z-index: 100;
+
+  @media screen and (max-width: 1024px) {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+// Effects
+
+.overlay-share {
+  background: rgba($red, 0.85);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s, visibility 0s 0.4s;
+  transition: opacity 0.4s, visibility 0s 0.4s;
+}
+
+.overlay-share.overlay-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.overlay-share .share-wrap {
+  opacity: 0.5;
+  -webkit-transform: translateY(-25%);
+  transform: translateY(-25%);
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.overlay-share.overlay-open .share-wrap {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+
+.overlay-share .share-wrap {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  @media screen and (max-width: 1024px) {
+    height: auto;
+    top: 80px;
+  }
+}
+
+.overlay-share {
+  &.overlay-search {
+    background: rgba($firefly, 0.85);
+  }
+}
+
+ /*Bottom-to-top button styling*/
+.btnTop {
+  padding: 8px 14px 10px;
+  border: 0;
+  position: fixed;
+  bottom: 25px;
+  right: 2%;
+  z-index: 10000;
+  background: #ccc;
+  cursor: pointer;
+  font-size: 25px;
+  outline: 0;
+}
+
+
+/*Light-box issue*/
+html { 
+  overflow: hidden;
+  overflow-y: auto; 
+}
+
+body { padding-right: 0 !important; }

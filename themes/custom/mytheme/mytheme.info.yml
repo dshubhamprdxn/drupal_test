@@ -5,7 +5,7 @@ core: 8.x
 base theme: zircon
 screenshot: screenshot.png
 libraries:
-  # - mytheme/global-css
+  - mytheme/global-css
   # - mytheme/global-js
 
 regions:

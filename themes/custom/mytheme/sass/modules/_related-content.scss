@@ -1,0 +1,171 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Related Content
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.media-3-up.related-content {
+  font-family: 'EconSansOs';
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    order: 2;
+    @include order(2);
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 20px 20px 0;
+  }
+
+  .view-content { @include flexbox; }
+
+	h2 {
+    padding: 8px 0;
+    margin: 0 0 28px;
+    position: relative;
+    display: block;
+    border-top: 1px solid rgba(216, 216, 216, 0.7);
+    border-bottom: 1px solid rgba(216, 216, 216, 0.7);
+    font-family: 'EconSansOs';
+    font-size: 18px;
+    font-family: 'EconSansOs';
+    color: #404040;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.67;
+
+    @media screen and (max-width: 990px) { font-size: 15px; }
+    // @media screen and (max-width: 768px) { @include font-size(16); }
+
+    @media screen and (max-width: 768px) {
+      margin-left: 4.60%;
+      margin-bottom: 23px;
+      line-height: normal;
+      font-size: 18px;
+      display: inline-block;
+      border: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 12%;
+        height: 2px;
+        display: inline-block;
+        background: #c32330;
+        top: 50%;
+        left: -21%;
+
+      }
+    }
+  }
+
+  .quick-links-title {
+    padding: 8px 0;
+    display: block;
+    border-top: 1px solid rgba(216, 216, 216, 0.7);
+    border-bottom: 1px solid rgba(216, 216, 216, 0.7);
+    color: #404040;
+    font-family: 'EconSansOs';
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+
+    
+    // margin: 0 0 28px;
+    // position: relative;
+
+    @media screen and (max-width: 768px) { 
+      display: inline-block;
+      border: none;
+      margin-left: 4.60%;
+
+      &:before {
+        width: 17%;
+        left: -32%;
+      }
+    }
+  }
+
+    .span-4-of-12.col {
+        width: 31.786%;
+        float: left;
+        margin: 0 0 0 2.32%;
+        font-family: 'Milo';
+        outline: none;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin:0px 1.45% 60px 0px;
+          width:100%;
+        }
+
+        .views-field-view-node {
+          // position: absolute;
+          bottom: 0;
+
+          @media screen and (max-width: 768px) { position: relative; }
+
+          a {
+            display: inline;
+            font-size: 16px;
+            font-weight: 700;
+            color: #121212;
+            position: relative;
+            // font-family: "Milo";
+            font-family: "EconSansOs";
+            // margin-top: 18px;
+            outline: none;
+            line-height: normal;
+
+            @media screen and (min-width: 1024px) {
+              &:hover {
+                &:after {
+                  -webkit-transform: translateX(5px);
+                  -ms-transform: translateX(5px);
+                  transform: translateX(5px);
+                }
+              }
+            }
+
+            @media screen and (max-width: 768px) {
+              margin-top: 18px;
+              display: inline-block;
+            }
+
+            &:after {
+              content: "";
+              width: 15px;
+              height: 11px;
+              display: inline-block;
+              // position: absolute;
+              margin: 5px 0 0 12px;
+              background: url(../images/icons/svg/Group.svg) no-repeat;
+              background-size: contain;
+              -webkit-transition: 300ms -webkit-transform ease-in-out;
+              transition: 300ms -webkit-transform ease-in-out;
+              -o-transition: 300ms transform ease-in-out;
+              transition: 300ms transform ease-in-out, 300ms -webkit-transform ease-in-out;
+              transition: 300ms transform ease-in-out;
+
+              @include responsive(0,768px) {
+                margin: 1px 0 0 12px;
+              }
+            }
+          }
+        }
+
+        p { font-size: 16px; }
+
+    }
+
+    .field-name-field-primary-industry { margin:0px; }
+
+    .field-name-field-hero-image { margin:0px; }
+
+    .slick-list { padding: 0 20% 0 0; }
+
+}

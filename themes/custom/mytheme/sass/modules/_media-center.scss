@@ -1,0 +1,111 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Media Center
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.page-press-releases {
+  font-family: 'Milo';
+
+  .press-releases-wrapper {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 100px;
+    @include bp(mobile) {
+      padding-bottom: 10px;
+    }
+  }
+
+  .sub-title {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  #form-filter-by-industry {
+    float: right;
+    margin: 0 0 1em;
+    @include bp(mobile) {
+      float: none;
+    }
+
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+
+  .press-releases {
+    clear: both;
+    font-family: 'EconSansOs';
+    font-size: 16px;
+
+    h3 {
+      border-bottom: 1px solid $silver;
+      color: $shipgrey;
+      padding: 25px 0 5px;
+      clear: both;
+      @include font-size(20);
+      &:first-of-type {
+        padding-top: 0;
+      }
+    }
+    h4 {
+      float: left;
+      clear: both;
+      color: $manatee;
+      margin: 0;
+      padding: 3px 0 0;
+      width: 90px;
+      @include font-size(14);
+    }
+  }
+  .grouped-publish-date {
+    float: left;
+    margin-bottom: 7px;
+    width: calc(100% - 90px);
+
+    a {
+      display: block;
+      line-height: 18px;
+      margin-left: 15px;
+      margin-bottom: 7px;
+      padding: 3px 0;
+      @include font-size(14);
+    }
+  }
+  .text-center {
+    clear: both;
+    text-align: left;
+    padding: 30px 0 0;
+  }
+
+  // placeholder styles
+
+  .press-kit-wrapper {
+
+    .download {
+      width: 100%;
+      padding: 12px 10px;
+    }
+
+    .get-notified {
+      border: 1px solid $silver;
+      margin-top: 20px;
+      padding: 20px 10px;
+      h5 {
+        margin: 0 0 10px;
+        padding: 0;
+        font-weight: bold;
+        text-align: center;
+      }
+      [type="textfield"] {
+        width: 100%;
+        margin: 3px 0;
+        padding: 3px 5px;
+      }
+      [type="submit"] {
+        margin: 10px 0;
+        width: 100%;
+      }
+    }
+  }
+}

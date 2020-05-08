@@ -1,0 +1,142 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  EIU Perspectives Series
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.page-eiu-perspectives-series {
+	.view-content {
+		.views-row { 
+			box-sizing: border-box;
+		    width: 48.7%;
+		    height: 320px;
+			padding: 15px; 
+			border: 1px solid #fff;
+			margin-bottom: 20px;
+			margin-right: 1%;
+		    display: inline-block;
+		    position: relative;
+			background-color: #fff;
+    		vertical-align: top; 
+    		transition: border .3s linear;
+
+    		@include responsive(0,950px) {
+				width: 100%;
+				height: 450px;
+				margin-right: 0;
+			}
+
+    		@include responsive(0,1024px) {
+				background-color: #e0e0e0;
+			}
+
+    		&:hover {
+    			border-color: #000;
+
+    			@include responsive(0,1024px) {
+					border-color: #fff;
+				}
+    		}
+
+    		&:nth-child(2) {
+    			margin-right: 0;
+    		}
+
+			@include responsive(0,900px) {
+				height: auto;
+			}
+
+			.field-name-field-hero-image {
+				width: 100%;
+				height: 100%;
+
+				a,
+				img { height: 100%; }
+
+				a { display: block; }
+
+				img { width: 100%; }
+			}
+
+			.views-field-title {
+				padding-right: 15px;
+				position: absolute;
+				bottom: 38px;
+				left: 25px;
+				text-shadow: 2px 3px 24px #000;
+				a {
+					font-size: 30px;
+					color: #fff;
+					text-decoration: none;
+
+					@include responsive(0,1000px) {
+						font-size: 24px;
+					}
+
+					@include responsive(0,800px) {
+						font-size: 17px;
+					}
+
+					@include responsive(0,400px) {
+						font-size: 14px;
+					}
+				}
+			}
+
+			> span { 
+				padding: 2px 9px;
+				position: absolute;
+				top: 21px;
+				left: 21px;
+				background: rgba(0,0,0,0.46);
+				color: #fff;
+				font-size: 17px;
+
+				@include responsive(0,800px) {
+					font-size: 14px;
+				}
+
+				@include responsive(0,400px) {
+					font-size: 11px;
+				} 
+			}
+		}
+	}
+
+	.view-header {
+		h1 {
+			@include responsive(0,450px) {
+				font-size: 30px;
+			}
+
+			@include responsive(0,350px) {
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+.main-content {
+	.eiu-series {
+			h2 {
+			display: block;
+			padding-top: 10px;
+		}
+
+		.field-label { display: none; }
+	}
+} 
+
+#_evidon_banner { 
+	display: flex;
+	width: 100%;
+	background: rgb(149, 255, 255) none repeat scroll 0% 0%;
+	color: rgb(0, 0, 0);
+	z-index: 2147000001;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5em 2em 0.5em 0.5em;
+	box-sizing: border-box;
+	top: 0px;
+	position: fixed !important;
+}
