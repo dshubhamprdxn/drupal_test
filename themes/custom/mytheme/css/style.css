@@ -853,7 +853,7 @@ button,
   width: 20px;
   height: 18px; }
 
-.wrapper {
+.container.wrapper {
   width: 80%; }
 
 ul.menu {
@@ -867,5 +867,276 @@ ul.menu {
 #main-menu .wrapper ul.menu li a {
   height: 100%;
   font-size: 15px; }
+
+h2 {
+  margin-left: 2%;
+  font-size: 28px;
+  color: #000;
+  font-weight: bolder; }
+
+.articles-list,
+.infographics-list,
+.case-study-list {
+  display: flex;
+  justify-content: start;
+  margin: 20px auto; }
+  .articles-list > div,
+  .infographics-list > div,
+  .case-study-list > div {
+    margin-left: 2.5%;
+    padding: 20px 2%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #CCC;
+    flex-basis: 46%;
+    width: 46%; }
+    .articles-list > div .industry-articles--figure,
+    .articles-list > div .industry-infographics--figure,
+    .articles-list > div .industry-case-study--figure,
+    .infographics-list > div .industry-articles--figure,
+    .infographics-list > div .industry-infographics--figure,
+    .infographics-list > div .industry-case-study--figure,
+    .case-study-list > div .industry-articles--figure,
+    .case-study-list > div .industry-infographics--figure,
+    .case-study-list > div .industry-case-study--figure {
+      transform: scale(1);
+      transition: all 1s ease-in-out; }
+      .articles-list > div .industry-articles--figure:hover,
+      .articles-list > div .industry-infographics--figure:hover,
+      .articles-list > div .industry-case-study--figure:hover,
+      .infographics-list > div .industry-articles--figure:hover,
+      .infographics-list > div .industry-infographics--figure:hover,
+      .infographics-list > div .industry-case-study--figure:hover,
+      .case-study-list > div .industry-articles--figure:hover,
+      .case-study-list > div .industry-infographics--figure:hover,
+      .case-study-list > div .industry-case-study--figure:hover {
+        transform: scale(1.1);
+        transition: all 1s ease-in-out; }
+    .articles-list > div .industry-articles--category,
+    .articles-list > div .industry-case-study--category,
+    .infographics-list > div .industry-articles--category,
+    .infographics-list > div .industry-case-study--category,
+    .case-study-list > div .industry-articles--category,
+    .case-study-list > div .industry-case-study--category {
+      padding: 10px 0 0 0; }
+      .articles-list > div .industry-articles--category a,
+      .articles-list > div .industry-case-study--category a,
+      .infographics-list > div .industry-articles--category a,
+      .infographics-list > div .industry-case-study--category a,
+      .case-study-list > div .industry-articles--category a,
+      .case-study-list > div .industry-case-study--category a {
+        display: block;
+        font-size: 14px; }
+    .articles-list > div .industry-articles--body,
+    .articles-list > div .industry-case-study--body,
+    .infographics-list > div .industry-articles--body,
+    .infographics-list > div .industry-case-study--body,
+    .case-study-list > div .industry-articles--body,
+    .case-study-list > div .industry-case-study--body {
+      padding: 10px 0 0 0; }
+      .articles-list > div .industry-articles--body p,
+      .articles-list > div .industry-case-study--body p,
+      .infographics-list > div .industry-articles--body p,
+      .infographics-list > div .industry-case-study--body p,
+      .case-study-list > div .industry-articles--body p,
+      .case-study-list > div .industry-case-study--body p {
+        font-size: 14px; }
+    .articles-list > div h4,
+    .infographics-list > div h4,
+    .case-study-list > div h4 {
+      padding: 10px 0 0 0;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold; }
+    .articles-list > div .industry-articles--read-more,
+    .articles-list > div .industry-infographics--read-more,
+    .articles-list > div .industry-case-study--read-more,
+    .infographics-list > div .industry-articles--read-more,
+    .infographics-list > div .industry-infographics--read-more,
+    .infographics-list > div .industry-case-study--read-more,
+    .case-study-list > div .industry-articles--read-more,
+    .case-study-list > div .industry-infographics--read-more,
+    .case-study-list > div .industry-case-study--read-more {
+      padding: 15px 0 0 0; }
+      .articles-list > div .industry-articles--read-more a,
+      .articles-list > div .industry-infographics--read-more a,
+      .articles-list > div .industry-case-study--read-more a,
+      .infographics-list > div .industry-articles--read-more a,
+      .infographics-list > div .industry-infographics--read-more a,
+      .infographics-list > div .industry-case-study--read-more a,
+      .case-study-list > div .industry-articles--read-more a,
+      .case-study-list > div .industry-infographics--read-more a,
+      .case-study-list > div .industry-case-study--read-more a {
+        color: #000;
+        font-weight: bold;
+        font-size: 22px;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out; }
+        .articles-list > div .industry-articles--read-more a:hover,
+        .articles-list > div .industry-infographics--read-more a:hover,
+        .articles-list > div .industry-case-study--read-more a:hover,
+        .infographics-list > div .industry-articles--read-more a:hover,
+        .infographics-list > div .industry-infographics--read-more a:hover,
+        .infographics-list > div .industry-case-study--read-more a:hover,
+        .case-study-list > div .industry-articles--read-more a:hover,
+        .case-study-list > div .industry-infographics--read-more a:hover,
+        .case-study-list > div .industry-case-study--read-more a:hover {
+          transform: scale(1.1);
+          color: #a11e1e;
+          transition: all 0.5s ease-in-out; }
+    .articles-list > div .industry-infographic--sponser,
+    .infographics-list > div .industry-infographic--sponser,
+    .case-study-list > div .industry-infographic--sponser {
+      padding: 10px 0 0 0; }
+
+.video-list {
+  display: flex;
+  justify-content: start;
+  margin: 20px auto; }
+  .video-list > div {
+    width: 46%;
+    flex-basis: 46%;
+    padding: 20px 2%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    background-color: #CCC; }
+    .video-list > div .industry-videos--video {
+      width: 100%; }
+    .video-list > div .industry-videos--category {
+      padding: 10px 0 0 0; }
+      .video-list > div .industry-videos--category a {
+        display: block;
+        font-size: 14px; }
+    .video-list > div .industry-videos--body {
+      padding: 10px 0 0 0; }
+      .video-list > div .industry-videos--body p {
+        font-size: 14px; }
+    .video-list > div h4 {
+      padding: 10px 0 0 0;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold; }
+    .video-list > div .industry-videos--read-more {
+      padding: 15px 0 0 0; }
+      .video-list > div .industry-videos--read-more a {
+        color: #000;
+        font-weight: bold;
+        font-size: 22px;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out; }
+        .video-list > div .industry-videos--read-more a:hover {
+          color: #a11e1e;
+          transform: scale(1.1);
+          transition: all 0.5s ease-in-out; }
+    .video-list > div .industry-videos--author {
+      padding: 10px 0 0 0;
+      float: right;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: capitalize; }
+
+.more-link {
+  padding: 15px 0 0 0;
+  text-align: center; }
+  .more-link a {
+    border: 2px solid;
+    background-color: #fff;
+    color: rgba(241, 13, 44, 0.712);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out; }
+    .more-link a:hover {
+      border: 2px solid;
+      background-color: rgba(241, 13, 44, 0.712);
+      color: #fff;
+      transition: all 0.5s ease-in-out; }
+
+#panel_first .container {
+  background-color: #eee; }
+
+.related-content-list {
+  display: flex;
+  justify-content: start;
+  margin: 20px auto; }
+  .related-content-list > div {
+    margin-left: 2.5%;
+    padding: 10px 2%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #CCC;
+    flex-basis: 30%;
+    width: 30%; }
+    .related-content-list > div .industry-articles--figure,
+    .related-content-list > div .industry-infographic--figure,
+    .related-content-list > div .industry-case-study--figure {
+      transform: scale(1);
+      transition: all 1.5s ease-in-out; }
+      .related-content-list > div .industry-articles--figure:hover,
+      .related-content-list > div .industry-infographic--figure:hover,
+      .related-content-list > div .industry-case-study--figure:hover {
+        transform: scale(1.2);
+        transition: all 1.5s ease-in-out; }
+    .related-content-list > div .industry-articles--category,
+    .related-content-list > div .industry-infographic--category,
+    .related-content-list > div .industry-case-study--category {
+      padding: 10px 0 0 0; }
+      .related-content-list > div .industry-articles--category a,
+      .related-content-list > div .industry-infographic--category a,
+      .related-content-list > div .industry-case-study--category a {
+        display: block;
+        font-size: 14px; }
+    .related-content-list > div .industry-articles--body,
+    .related-content-list > div .industry-case-study--body {
+      padding: 10px 0 0 0; }
+      .related-content-list > div .industry-articles--body p,
+      .related-content-list > div .industry-case-study--body p {
+        font-size: 14px; }
+    .related-content-list > div h4 {
+      padding: 10px 0 0 0;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold; }
+    .related-content-list > div .industry-articles--read-more,
+    .related-content-list > div .industry-infographic--read-more,
+    .related-content-list > div .industry-case-study--read-more {
+      padding: 15px 0 0 0; }
+      .related-content-list > div .industry-articles--read-more a,
+      .related-content-list > div .industry-infographic--read-more a,
+      .related-content-list > div .industry-case-study--read-more a {
+        color: #000;
+        font-weight: bold;
+        font-size: 22px;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out; }
+        .related-content-list > div .industry-articles--read-more a:hover,
+        .related-content-list > div .industry-infographic--read-more a:hover,
+        .related-content-list > div .industry-case-study--read-more a:hover {
+          transform: scale(1.1);
+          color: #a11e1e;
+          transition: all 0.5s ease-in-out; }
+    .related-content-list > div .industry-videos--category {
+      padding: 10px 0 0 0; }
+      .related-content-list > div .industry-videos--category a {
+        display: block;
+        font-size: 14px; }
+    .related-content-list > div .industry-videos--body {
+      padding: 10px 0 0 0; }
+      .related-content-list > div .industry-videos--body p {
+        font-size: 14px; }
+    .related-content-list > div .industry-videos--read-more {
+      padding: 15px 0 0 0; }
+      .related-content-list > div .industry-videos--read-more a {
+        color: #000;
+        font-weight: bold;
+        font-size: 22px;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out; }
+        .related-content-list > div .industry-videos--read-more a:hover {
+          color: #a11e1e;
+          transform: scale(1.1);
+          transition: all 0.5s ease-in-out; }
 
 /*# sourceMappingURL=style.css.map */

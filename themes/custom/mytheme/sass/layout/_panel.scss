@@ -1,45 +1,37 @@
-////////////////////////////////////////////////////////////////////////////////
-//
-//  Main content
-//
-////////////////////////////////////////////////////////////////////////////////
-
-h2 {
-    margin-left: 2%;
-    font-size: 28px;
-    color: #000;
-    font-weight: bolder;
+#panel_first {
+    .container {
+        background-color: #eee;
+    }
 }
 
-.articles-list,
-.infographics-list,
-.case-study-list {
+.related-content-list {
     display: flex;
     justify-content: start;
     margin: 20px auto;
-    
+
     & > div {
         margin-left: 2.5%;
-        padding: 20px 2%;
+        padding: 10px 2%;
         overflow: hidden;
         border-radius: 10px;
         background-color: #CCC;
-        flex-basis: 46%;
-        width: 46%;
+        flex-basis: 30%;
+        width: 30%;
 
         .industry-articles--figure,
-        .industry-infographics--figure,
+        .industry-infographic--figure,
         .industry-case-study--figure {
             transform: scale(1);
-            transition: all 1s ease-in-out;
+            transition: all 1.5s ease-in-out;
 
             &:hover {
-                transform: scale(1.1);
-                transition: all 1s ease-in-out;
+                transform: scale(1.2);
+                transition: all 1.5s ease-in-out;
             }
         }
 
         .industry-articles--category,
+        .industry-infographic--category,
         .industry-case-study--category  {
             padding: 10px 0 0 0;
             a {
@@ -64,7 +56,7 @@ h2 {
         }
 
         .industry-articles--read-more,
-        .industry-infographics--read-more,
+        .industry-infographic--read-more,
         .industry-case-study--read-more  {
             padding: 15px 0 0 0;
             a {
@@ -82,30 +74,6 @@ h2 {
             }
         }
 
-        .industry-infographic--sponser {
-            padding: 10px 0 0 0;
-        }
-        
-    }
-}
-
-.video-list {
-    display: flex;
-    justify-content: start;
-    margin: 20px auto;
-
-    & > div {
-        width: 46%;
-        flex-basis: 46%;
-        padding: 20px 2%;
-        margin-left: 2.5%;
-        border-radius: 10px;
-        background-color: #CCC;
-
-        .industry-videos--video  {
-            width: 100%;
-        }
-
         .industry-videos--category  {
             padding: 10px 0 0 0;
             a {
@@ -119,13 +87,6 @@ h2 {
             p {
                 font-size: 14px;
             }
-        }
-
-        h4 {
-            padding: 10px 0 0 0;
-            color: #000;
-            font-size: 18px;
-            font-weight: bold;
         }
 
         .industry-videos--read-more  {
@@ -144,39 +105,5 @@ h2 {
                 }
             }
         }
-
-        .industry-videos--author {
-            padding: 10px 0 0 0;
-            float: right;
-            color: #000;
-            font-size: 18px;
-            font-weight: bold;
-            text-transform: capitalize;
-        }
-    }
-
-}
-
-
-.more-link {
-    padding: 15px 0 0 0;
-    text-align: center;
-    a {
-        border: 2px solid;
-        background-color: #fff;
-        color: rgba(241, 13, 44, 0.712);
-        padding: 10px;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 5px;
-        transition: all 0.5s ease-in-out;
-        
-        &:hover {
-            border: 2px solid;
-            background-color: rgba(241, 13, 44, 0.712);
-            color:#fff;
-            transition: all 0.5s ease-in-out;
-        }
     }
 }
-
