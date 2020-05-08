@@ -14,18 +14,18 @@ h2 {
 .articles-list,
 .infographics-list,
 .case-study-list {
-    display: flex;
-    justify-content: start;
+    @include flexbox;
+    @include justify-content(start);
     margin: 20px auto;
     
     & > div {
+        width: 46%;
+        @include flex-basis(46%);
         margin-left: 2.5%;
         padding: 20px 2%;
         overflow: hidden;
         border-radius: 10px;
         background-color: #CCC;
-        flex-basis: 46%;
-        width: 46%;
 
         .industry-articles--figure,
         .industry-infographics--figure,
@@ -90,13 +90,13 @@ h2 {
 }
 
 .video-list {
-    display: flex;
-    justify-content: start;
+    @include flexbox;
+    @include justify-content(start);
     margin: 20px auto;
 
     & > div {
         width: 46%;
-        flex-basis: 46%;
+        @include flex-basis(46%);
         padding: 20px 2%;
         margin-left: 2.5%;
         border-radius: 10px;

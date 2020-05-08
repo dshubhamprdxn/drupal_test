@@ -856,12 +856,51 @@ button,
 .container.wrapper {
   width: 80%; }
 
+.site-name {
+  background-color: red; }
+  .site-name a {
+    padding: 10px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder; }
+
+.search-box h2 {
+  font-size: 14px;
+  font-weight: bold; }
+
+.search-box form {
+  margin-top: 8px; }
+  .search-box form .form-search {
+    width: 190px;
+    padding: 2px 5px 3px 0px; }
+
+#header .search-block-form {
+  background-color: #fff; }
+  #header .search-block-form:before {
+    width: 40px;
+    height: 24px;
+    top: 32px;
+    right: 5px;
+    padding: 4px 10px 4px 4px;
+    background-color: #fff; }
+
 ul.menu {
-  background-color: #313336;
-  border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start; }
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  -moz-justify-content: start;
+  justify-content: start;
+  background-color: #313336;
+  border-radius: 10px; }
   ul.menu li.menu-item {
+    -webkit-flex-basis: 14%;
+    -moz-flex-basis: 14%;
+    -ms-flex-preferred-size: 14%;
     flex-basis: 14%; }
 
 #main-menu .wrapper ul.menu li a {
@@ -877,19 +916,30 @@ h2 {
 .articles-list,
 .infographics-list,
 .case-study-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  -moz-justify-content: start;
   justify-content: start;
   margin: 20px auto; }
   .articles-list > div,
   .infographics-list > div,
   .case-study-list > div {
+    width: 46%;
+    -webkit-flex-basis: 46%;
+    -moz-flex-basis: 46%;
+    -ms-flex-preferred-size: 46%;
+    flex-basis: 46%;
     margin-left: 2.5%;
     padding: 20px 2%;
     overflow: hidden;
     border-radius: 10px;
-    background-color: #CCC;
-    flex-basis: 46%;
-    width: 46%; }
+    background-color: #CCC; }
     .articles-list > div .industry-articles--figure,
     .articles-list > div .industry-infographics--figure,
     .articles-list > div .industry-case-study--figure,
@@ -990,11 +1040,22 @@ h2 {
       padding: 10px 0 0 0; }
 
 .video-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  -moz-justify-content: start;
   justify-content: start;
   margin: 20px auto; }
   .video-list > div {
     width: 46%;
+    -webkit-flex-basis: 46%;
+    -moz-flex-basis: 46%;
+    -ms-flex-preferred-size: 46%;
     flex-basis: 46%;
     padding: 20px 2%;
     margin-left: 2.5%;
@@ -1138,5 +1199,67 @@ h2 {
           color: #a11e1e;
           transform: scale(1.1);
           transition: all 0.5s ease-in-out; }
+
+.more-content-list {
+  margin: 20px auto; }
+  .more-content-list .industry-articles--category,
+  .more-content-list .industry-case-study--category {
+    padding: 5px 0 0 0; }
+    .more-content-list .industry-articles--category a,
+    .more-content-list .industry-case-study--category a {
+      display: block;
+      font-size: 14px; }
+  .more-content-list .industry-articles--body,
+  .more-content-list .industry-case-study--body {
+    padding: 10px 0 0 0; }
+    .more-content-list .industry-articles--body p,
+    .more-content-list .industry-case-study--body p {
+      font-size: 14px; }
+  .more-content-list h4 {
+    padding: 10px 0 0 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold; }
+  .more-content-list .industry-articles--read-more,
+  .more-content-list .industry-infographics--read-more,
+  .more-content-list .industry-case-study--read-more {
+    padding: 15px 0 0 0; }
+    .more-content-list .industry-articles--read-more a,
+    .more-content-list .industry-infographics--read-more a,
+    .more-content-list .industry-case-study--read-more a {
+      color: #000;
+      font-weight: bold;
+      font-size: 22px;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out; }
+      .more-content-list .industry-articles--read-more a:hover,
+      .more-content-list .industry-infographics--read-more a:hover,
+      .more-content-list .industry-case-study--read-more a:hover {
+        transform: scale(1.1);
+        color: #a11e1e;
+        transition: all 0.5s ease-in-out; }
+  .more-content-list .industry-infographic--sponser {
+    padding: 10px 0 0 0; }
+
+#footer .block {
+  width: 100%; }
+#footer ul.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+  #footer ul.menu li {
+    padding: 0;
+    margin: 0; }
+
+.menu--footer {
+  background-color: #313336;
+  padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */
